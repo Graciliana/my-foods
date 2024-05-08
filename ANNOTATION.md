@@ -110,7 +110,7 @@ Formatar o schema.prisma
 npx prisma format
 ```
 
-## Migrar o schemaprisma para o banco de dados 
+## Migrar o schemaprisma para o banco de dados
 
 ```bash
 npx prisma migrate dev --name init_database
