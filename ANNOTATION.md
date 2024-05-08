@@ -129,7 +129,7 @@ utilizar neste projeto
   },
 ```
 
-## Instalar ts-node 
+## Instalar ts-node
 
 ```bash
 npm install -D ts-node
@@ -142,3 +142,39 @@ npx prisma db seed
 ```
 
 ## Shadcn/ui
+
+### Documentacao
+
+<https://ui.shadcn.com/>
+
+```bash
+npx shadcn-ui@latest init
+```
+
+## husky e lint staged
+
+### Documentacao husky
+
+<https://typicode.github.io/husky/#/>
+
+```bash
+npm install -D husky lint-staged
+```
+
+inicializar o husky
+
+```bash
+npx husky init
+```
+
+Em .husky/pre-commit
+
+```bash
+npx lint-staged
+```
+
+## configuração do eslint da rocketseat
+
+```bash
+ npm install @rocketseat/eslint-config -D
+```
