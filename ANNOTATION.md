@@ -116,7 +116,27 @@ npx prisma format
 npx prisma migrate dev --name init_database
 ```
 
-## Rodar o projeto
+## Popular o banco de dados
+
+utilizar neste projeto
+<https://github.com/felipemotarocha/fullstackweek-foods/blob/main/prisma/seed.ts>
+
+## acrecentar no package.json
 
 ```bash
-npm run dev
+ "prisma": {
+    "seed":"ts-node ./prisma/seed.ts"
+  },
+```
+
+## Instalar ts-node 
+
+```bash
+npm install -D ts-node
+```
+
+## Rodar o seed
+
+```bash
+npx prisma db seed
+```
