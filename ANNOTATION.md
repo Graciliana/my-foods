@@ -140,3 +140,5 @@ npm install -D ts-node
 ```bash
 npx prisma db seed
 ```
+
+## Shadcn/ui
