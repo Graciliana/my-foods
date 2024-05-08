@@ -14,7 +14,11 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        xs: "390px",
+        sm: "600px",
+        md: "900px",
+        lg: "1200px",
+        xl: "1536px",
       },
     },
     extend: {
