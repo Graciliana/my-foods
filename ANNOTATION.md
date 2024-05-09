@@ -200,5 +200,28 @@ export const Header = () => {
 search.tsx
 
 ```bash
-npx lint-staged
+# app/_components/search.tsx
+import * as React from "react";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { SearchIcon } from "lucide-react";
+
+export const Search = () => {
+  return (
+    <div className="flex gap-2 drop-shadow-xl max-w-full">
+      <Input placeholder="Buscar restaurantes" className="border-none" />
+      <Button size="icon" className="bg-[#ea1d2c]">
+        <SearchIcon size={20} />
+      </Button>
+    </div>
+  );
+};
+
 ```
+
+## Categorias
+
+- pegar as categorias do banco de dados
+- renderizar um item para cada categoria
+
+

@@ -5,8 +5,8 @@ import { PromoBanner } from "./_components/promo-banner";
 import { Search } from "./_components/search";
 import { Button } from "./_components/ui/button";
 import { ProductList } from "./_components/product-list";
-
 import { db } from "./_lib/prisma";
+import RestaurantList from "./_components/restaurant-list";
 
 const Home = async () => {
   const products = await db.product.findMany({
@@ -42,7 +42,7 @@ const Home = async () => {
           alt="Até 30% de desconto em pizzas!"
         />
       </div>
-      <div className="pt-6">
+      <div className="pt-6 px-5">
         <div className="flex items-center justify-between px-5">
           <h2 className="text-[#323232] font-semibold text-base ">
             Pedidos Recomendados
@@ -62,6 +62,21 @@ const Home = async () => {
           src="/BannerBurguer-02.svg"
           alt="A partir de R$17,90 em lanches"
         />
+      </div>
+      <div className="pt-6 px-5">
+        <div className="flex items-center justify-between px-5">
+          <h2 className="text-[#323232] font-semibold text-base ">
+            Restaurantes Recomendados
+          </h2>
+          <Button
+            variant="ghost"
+            className="h-fit p-0 font-norma text-red-600 hover:bg-transparent"
+          >
+            Ver todos
+            <ChevronRight size={16} />
+          </Button>
+        </div>
+        <RestaurantList />
       </div>
     </>
   );
